@@ -7,4 +7,10 @@
 - The most complete platform to explore, gather and discuss ideas.
 - Collaborating and Connecting the Ideas, People & Resources to Make Products.
 
-./assets/logo.png
+![alt text](https://github.com/gagankarthik/projectio/blob/main/assets/logo.png)
+
+Live webiste:
+https://www.projectio.ml/
+
+Contributor:
+https://github.com/gagankarthik
