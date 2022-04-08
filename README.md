@@ -6,5 +6,3 @@
 - Idea gather make product Collaboration is key when building something truly awesome.
 - The most complete platform to explore, gather and discuss ideas.
 - Collaborating and Connecting the Ideas, People & Resources to Make Products.
-
-./assets/logo.png
