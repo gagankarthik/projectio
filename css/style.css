@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.header{
+    padding: 0 4rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e7f5ff;
+}
+.header .logo{
+    font-size: large;
+
+}
+.navbar-list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited{
+display: inline-block;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 16px;
+font-weight: 500;
+color:#212529;
+transition: all 0.3s;
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color: #364fc7;
+}
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon{
+    width: 2rem;
+    height: 2rem;
+    color: #212529;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+/*=====================================
+            Section hero     
+   ==================================*/
+.section-hero{
+background-color: #a5d8ff;
+height: 30vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.section-hero p{
+    font-size: 3rem;
+}
+/*=====================================
+           Responsive Mobile View   
+   ==================================*/
+@media only screen and (max-width:600px) {
+    .mobile-navbar-btn{
+        display: block;
+    }
+    .header{
+        position: relative;
+    }
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        background-color: #e7f5ff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s linear;
+        pointer-events: none;
+        transform: translateX(100%);
+        opacity: 0;
+        visibility:hidden;
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .active .navbar{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active .mobile-navbar-btn
+     .mobile-nav-icon[name="close-outline"]{
+         display: block;
+     }
+     .active .mobile-navbar-btn
+     .mobile-nav-icon[name="menu-outline"]{
+         display: none;
+     }
+}
