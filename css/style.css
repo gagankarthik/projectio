@@ -432,6 +432,7 @@ footer {
 
   .navbar .navbar-link {
     color: var(--white);
+    font-size: 20px;
   }
 
   .mobile-navbar-btn {

@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="keywords" content="project,projectideas,collabrate,tool,platform,team,projectio">
+  <meta name="robots" content="index,follows"/>
+  <meta property="og:title" content="ProjectIo. | Project Ideas - share,collaborate,product" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.projectio.ml/" />
+  <meta property="og:site_name" content="ProjectIo" />
+  <meta property="og:image" content="assets/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="assets/favicon_io/site.webmanifest">
   <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
-  <title>ProjectIo. | Share Ideas,collaborate easily, Create Product</title>
+  <title>ProjectIo. | Project Ideas - share,collaborate,product</title>
+  <meta property="og:description" content=" ProjectIo is a platform for the development of ideas, collaborative consumption of goods and sustainable business' creation.
+  Creating a platform for creatives and makers to share ideas, collaborate, and make their product." />
   <meta name="description" content="Join the most creative grassroots invention platform on the planet!
   ProjectIo is a platform for the development of ideas, collaborative consumption of goods and sustainable business' creation.
   Creating a platform for creatives and makers to share ideas, collaborate, and make their product.">
@@ -19,7 +29,7 @@
     <p class="logo">ProjectIo.</p>
     <nav class="navbar">
       <ul class="navbar-list">
-        <li><a href="#" class="navbar-link">Project Ideas</a></li>
+        <li><a href="project-ideas.html" class="navbar-link">Project Ideas</a></li>
         <li><a href="#" class="navbar-link">FAQ</a></li>
         <li><a href="#" class="navbar-link">Post Idea</a></li>
         
@@ -41,7 +51,7 @@
             ProjectIo is a platform for the development of ideas, collaborative consumption of goods and sustainable business' creation.
             Creating a platform for creatives and makers to share ideas, collaborate, and make their product.
           </p>
-          <a href="#" target="_blank" class="btn">Get Started</a>
+          <a href="#" target="_blank" class="btn">Post Your Idea <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon></a>
 
           <div class="hero-icons">
             <div class="grid grid-two-column">
@@ -102,7 +112,7 @@
 
       <ul class="nav__ul">
         <li>
-          <a href="#">Project Ideas</a>
+          <a href="project-ideas.html">Project Ideas</a>
         </li>
 
         <li>
@@ -173,10 +183,18 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+  const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  nav_header.classList.toggle("active");
+};
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
+</script>
 <!--Gagan@12970-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
