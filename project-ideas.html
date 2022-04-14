@@ -26,10 +26,15 @@
 <body>
 
     
-    <script src="js/idea.js">
-      
+    <script>
+    const { createClient } =  require('@supabase/supabase-js')
+    const supa_url = 'https://idapnbemvejzmrsptcyx.supabase.co'
+    const anon_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlkYXBuYmVtdmVqem1yc3B0Y3l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDk0NDMxNzYsImV4cCI6MTk2NTAxOTE3Nn0.0gyTEQqMAjmnD6UGipZhBgoMRZC1HlwnYa5xPPUhVCs'
+    let supabase = createClient(supa_url,anon_key);
+    
+    let { data: project_ideas, error } = await supabase.from('project_ideas').select('*');
+    console.log(data);
+    
     </script>
-    <script src="https://unpkg.com/@supabase/supabase-js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </body>
 </html>

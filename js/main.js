@@ -1,8 +1,2 @@
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const nav_header = document.querySelector(".header");
-
-const toggleNavbar = () => {
-  nav_header.classList.toggle("active");
-};
-
-mobile_nav.addEventListener("click", () => toggleNavbar());
+const { createClient } =  require('@supabase/supabase-js')
+let supabase = createClient("https://idapnbemvejzmrsptcyx.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlkYXBuYmVtdmVqem1yc3B0Y3l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDk0NDMxNzYsImV4cCI6MTk2NTAxOTE3Nn0.0gyTEQqMAjmnD6UGipZhBgoMRZC1HlwnYa5xPPUhVCs")
